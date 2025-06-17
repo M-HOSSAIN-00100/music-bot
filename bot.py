@@ -40,7 +40,6 @@ async def play_music(_, message: Message):
     try:
         # গ্রুপে জয়েন করুন
         await app.send_message(chat_id, "🔊 **লাইভ স্ট্রিম শুরু হচ্ছে...**")
-        await app.join_chat(chat_id)
         
         # স্ট্রিমিং শুরু করুন
         await app.stream_audio(
